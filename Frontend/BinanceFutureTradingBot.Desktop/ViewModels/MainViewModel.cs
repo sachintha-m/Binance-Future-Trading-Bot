@@ -5,5 +5,5 @@ namespace BinanceFutureTradingBot.Desktop.ViewModels;
 public partial class MainViewModel : ViewModelBase
 {
     [ObservableProperty]
-    public partial string Greeting { get; set; } = "Welcome to Avalonia!";
+    public partial string AppTitle { get; set; } = "Binance Future Trading Bot";
 }
