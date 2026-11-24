@@ -1,6 +1,5 @@
 using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Interactivity;
 
 namespace BinanceFutureTradingBot.Desktop.Views;
 
@@ -17,26 +16,14 @@ public partial class MainWindow : Window
     
         if (change.Property == WindowStateProperty && RootBorder is not null)
         {
-            RootBorder.CornerRadius = WindowState == WindowState.Maximized
+            var isMaximized = WindowState == WindowState.Maximized;
+            
+            RootBorder.CornerRadius = isMaximized
                 ? default
                 : new CornerRadius(12);
+            RootBorder.Margin = isMaximized
+                ? default
+                : new Thickness(24);
         }
-    }
-
-    private void Minimize_Click(object? sender, RoutedEventArgs e)
-    {
-        WindowState =  WindowState.Minimized;
-    }
-
-    private void Maximize_Click(object? sender, RoutedEventArgs e)
-    {
-        WindowState =  WindowState == WindowState.Maximized
-            ? WindowState.Normal
-            : WindowState.Maximized;
-    }
-    
-    private void Close_Click(object? sender, RoutedEventArgs e)
-    {
-        Close();
     }
 }
