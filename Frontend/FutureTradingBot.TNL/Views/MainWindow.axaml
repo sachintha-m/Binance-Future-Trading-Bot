@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:BinanceFutureTradingBot.Desktop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="using:BinanceFutureTradingBot.Desktop.Controls"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="BinanceFutureTradingBot.Desktop.Views.MainWindow"
+        x:DataType="vm:MainViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        FontFamily="avares://BinanceFutureTradingBot.Desktop/Assets/Fonts#Inter"
+        Title="Binance Future Trading Bot"
+        TransparencyLevelHint="Transparent"
+        Background="Transparent"
+        WindowDecorations="None"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaTitleBarHeightHint="36">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainViewModel />
+    </Design.DataContext>
+    
+    <Border x:Name="RootBorder"
+            CornerRadius="12"
+            Margin="24"
+            Background="{StaticResource BackgroundBrush}"
+            BorderBrush="Aqua"
+            BorderThickness="1"
+            BoxShadow="0 0 10 1 #8000ffff">
+        <Grid RowDefinitions="36,*" ClipToBounds="True">
+            <controls:TitleBarControl Grid.Row="0"/>
+        </Grid>
+    </Border>
+
+</Window>

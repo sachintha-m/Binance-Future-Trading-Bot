@@ -18,7 +18,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceInclude Source="avares://BinanceFutureTradingBot.Desktop/Assets/Icons/Icon.axaml" />
             </ResourceDictionary.MergedDictionaries>
-            <SolidColorBrush x:Key="BackgroundBrush">#16284C</SolidColorBrush>
+            <SolidColorBrush x:Key="BackgroundBrush">#000D30</SolidColorBrush>
             <SolidColorBrush x:Key="SurfaceBrush">#1E293B</SolidColorBrush>
             <SolidColorBrush x:Key="AccentBrush">#2563EB</SolidColorBrush>
             <SolidColorBrush x:Key="TextBrush">#F8FAFC</SolidColorBrush>
