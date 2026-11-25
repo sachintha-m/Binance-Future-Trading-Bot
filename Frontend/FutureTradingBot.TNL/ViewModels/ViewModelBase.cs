@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace BinanceFutureTradingBot.Desktop.ViewModels;
+namespace FutureTradingBot.TNL.ViewModels;
 
 public abstract class ViewModelBase : ObservableObject
 {

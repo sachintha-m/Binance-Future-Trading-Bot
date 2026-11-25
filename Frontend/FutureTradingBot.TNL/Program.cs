@@ -1,7 +1,8 @@
 ﻿using Avalonia;
 using System;
+using FutureTradingBot.TNL;
 
-namespace BinanceFutureTradingBot.Desktop;
+namespace FutureTradingBot.TNL;
 
 sealed class Program
 {

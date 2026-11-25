@@ -1,7 +1,7 @@
 using Avalonia;
 using Avalonia.Controls;
 
-namespace BinanceFutureTradingBot.Desktop.Views;
+namespace FutureTradingBot.TNL.Views;
 
 public partial class MainWindow : Window
 {

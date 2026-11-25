@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 
-namespace BinanceFutureTradingBot.Desktop.Controls;
+namespace FutureTradingBot.TNL.Controls;
 
 public partial class TitleBarControl : UserControl
 {

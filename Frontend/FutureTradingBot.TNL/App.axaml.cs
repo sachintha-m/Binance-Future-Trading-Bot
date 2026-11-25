@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using BinanceFutureTradingBot.Desktop.ViewModels;
-using BinanceFutureTradingBot.Desktop.Views;
+using FutureTradingBot.TNL.ViewModels;
+using FutureTradingBot.TNL.Views;
 
-namespace BinanceFutureTradingBot.Desktop;
+namespace FutureTradingBot.TNL;
 
 public partial class App : Application
 {

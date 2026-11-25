@@ -2,9 +2,9 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using BinanceFutureTradingBot.Desktop.ViewModels;
+using FutureTradingBot.TNL.ViewModels;
 
-namespace BinanceFutureTradingBot.Desktop;
+namespace FutureTradingBot.TNL;
 
 /// <summary>
 /// Given a view model, returns the corresponding view if possible.
