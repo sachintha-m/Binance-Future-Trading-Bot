@@ -25,13 +25,21 @@
     <Border x:Name="RootBorder"
             CornerRadius="12"
             Margin="24"
-            Background="{StaticResource BackgroundBrush}"
+            Background="Transparent"
             BorderBrush="Aqua"
             BorderThickness="1"
             BoxShadow="0 0 10 1 #8000ffff">
-        <Grid RowDefinitions="30,*" ClipToBounds="True">
-            <controls:TitleBarControl Grid.Row="0"/>
-        </Grid>
+        
+        <Border CornerRadius="12"
+                Background="Transparent"
+                ClipToBounds="True">
+            
+            <Grid RowDefinitions="30,*" ClipToBounds="True">
+                <controls:TitleBarControl Grid.Row="0"/>
+            </Grid>
+            
+        </Border>
+        
     </Border>
 
 </Window>

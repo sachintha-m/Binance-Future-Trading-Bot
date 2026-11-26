@@ -7,8 +7,8 @@
              x:Class="FutureTradingBot.TNL.Controls.TitleBarControl"
              x:DataType="vm:MainViewModel">
     
-    <Border Background="Transparent" PointerPressed="TitleBar_PointerPressed"
-            BorderBrush="Purple" BorderThickness="1">
+    <Border Background="{StaticResource TitleBarBrush}" PointerPressed="TitleBar_PointerPressed"
+            >
         <Grid ColumnDefinitions="*,Auto" Margin="10,0,6,0">
             <StackPanel Grid.Column="0"
                         Orientation="Horizontal"

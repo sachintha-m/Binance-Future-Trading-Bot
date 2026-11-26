@@ -20,10 +20,6 @@
                 <ResourceInclude Source="avares://FutureTradingBot.TNL/Assets/Icons/Icon.axaml"/>
                 <ResourceInclude Source="avares://FutureTradingBot.TNL/Styles/Colors.axaml"/>
             </ResourceDictionary.MergedDictionaries>
-            <SolidColorBrush x:Key="BackgroundBrush">#000D30</SolidColorBrush>
-            <SolidColorBrush x:Key="SurfaceBrush">#1E293B</SolidColorBrush>
-            <SolidColorBrush x:Key="AccentBrush">#2563EB</SolidColorBrush>
-            <SolidColorBrush x:Key="TextBrush">#F8FAFC</SolidColorBrush>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
