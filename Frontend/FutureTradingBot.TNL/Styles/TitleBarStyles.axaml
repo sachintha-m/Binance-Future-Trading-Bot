@@ -1,0 +1,35 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <Style Selector="Button.MinimizeBtn:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background"
+                Value="{DynamicResource MinimizeBtnHoverColor}"/>
+    </Style>
+    <Style Selector="Button.MinimizeBtn:pressed /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background"
+                Value="{DynamicResource MinimizeBtnPressedColor}"/>
+    </Style>
+    <Style Selector="Button.MaximizeBtn:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background"
+                Value="{DynamicResource MaximizeBtnHoverColor}"/>
+    </Style>
+    <Style Selector="Button.MaximizeBtn:pressed /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background"
+                Value="{DynamicResource MaximizeBtnPressedColor}"/>
+    </Style>
+    <Style Selector="Button.CloseBtn:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background"
+                Value="{DynamicResource CloseBtnHoverColor}"/>
+    </Style>
+    <Style Selector="Button.CloseBtn:pressed /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background"
+                Value="{DynamicResource CloseBtnPressedColor}"/>
+    </Style>
+    
+    
+</Styles>

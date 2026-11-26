@@ -1,0 +1,15 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Title Bar Buttons -->
+    <SolidColorBrush x:Key="CloseBtnColor" Color="#FF605C"/>
+    <SolidColorBrush x:Key="MaximizeBtnColor" Color="#00CA4E"/>
+    <SolidColorBrush x:Key="MinimizeBtnColor" Color="#FFBD44"/>
+    <SolidColorBrush x:Key="CloseBtnHoverColor" Color="#FF312E"/>
+    <SolidColorBrush x:Key="MaximizeBtnHoverColor" Color="#00A33F"/>
+    <SolidColorBrush x:Key="MinimizeBtnHoverColor" Color="#FFA600"/>
+    <SolidColorBrush x:Key="CloseBtnPressedColor" Color="#FF8C8A"/>
+    <SolidColorBrush x:Key="MaximizeBtnPressedColor" Color="#5CFF9A"/>
+    <SolidColorBrush x:Key="MinimizeBtnPressedColor" Color="#FFD68A"/>
+    
+</ResourceDictionary>

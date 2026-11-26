@@ -7,55 +7,66 @@
              x:Class="FutureTradingBot.TNL.Controls.TitleBarControl"
              x:DataType="vm:MainViewModel">
     
-    <Border Background="Transparent" PointerPressed="TitleBar_PointerPressed">
-        <Grid ColumnDefinitions="*,Auto">
+    <Border Background="Transparent" PointerPressed="TitleBar_PointerPressed"
+            BorderBrush="Purple" BorderThickness="1">
+        <Grid ColumnDefinitions="*,Auto" Margin="10,0,6,0">
             <StackPanel Grid.Column="0"
                         Orientation="Horizontal"
                         Spacing="8"
-                        VerticalAlignment="Center"
-                        Margin="12,0">
-                <Image Source="/Assets/avalonia-logo.ico" Width="20" Height="20"/>
+                        VerticalAlignment="Center">
+                <Image Source="/Assets/avalonia-logo.ico" Width="22" Height="22"/>
                 <TextBlock Text="{Binding AppTitle}"
-                           FontSize="13"
+                           FontSize="14"
                            FontWeight="Light"
+                           Foreground="White"
                            VerticalAlignment="Center"/>
             </StackPanel>
             <StackPanel Grid.Column="1"
                         Orientation="Horizontal"
+                        Spacing="2"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center">
-                <Button Width="46"
-                        Height="36"
+                <Button Classes="MinimizeBtn"
+                        Width="30"
+                        Height="25"
                         Click="Minimize_Click"
-                        Background="Transparent">
+                        Background="{StaticResource MinimizeBtnColor}"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center">
                     <Rectangle Width="14"
                                Height="1.8"
-                               Fill="White"
+                               Fill="Black"
                                VerticalAlignment="Center"
                                HorizontalAlignment="Center"/>
                 </Button>
-                <Button Width="46"
-                        Height="36"
+                <Button Classes="MaximizeBtn"
+                        Width="30"
+                        Height="25"
                         Click="Maximize_Click"
-                        Background="Transparent">
+                        Background="{StaticResource MaximizeBtnColor}"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center">
                     <Path Data="{StaticResource MaximizeIcon}"
                           Width="12"
                           Height="12"
                           Stretch="Uniform"
-                          Stroke="White"
+                          Stroke="Black"
                           StrokeThickness="1.9"
                           VerticalAlignment="Center"
                           HorizontalAlignment="Center"/>
                 </Button>
-                <Button Width="46"
-                        Height="36"
+                <Button Classes="CloseBtn"
+                        Width="30"
+                        Height="25"
                         Click="Close_Click"
-                        Background="Transparent">
+                        Background="{StaticResource CloseBtnColor}"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center">
                     <Path Data="{StaticResource CloseIcon}"
                           Width="12"
                           Height="12"
                           Stretch="Uniform"
-                          Stroke="White"
+                          Stroke="Black"
                           StrokeThickness="1.9"
                           VerticalAlignment="Center"
                           HorizontalAlignment="Center"/>
