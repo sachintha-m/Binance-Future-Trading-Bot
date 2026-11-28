@@ -29,17 +29,14 @@
             BorderBrush="Aqua"
             BorderThickness="1"
             BoxShadow="0 0 10 1 #8000ffff">
-        
         <Border CornerRadius="12"
                 Background="Transparent"
                 ClipToBounds="True">
-            
             <Grid RowDefinitions="30,*" ClipToBounds="True">
                 <controls:TitleBarControl Grid.Row="0"/>
+                <controls:SplitViewControl Grid.Row="1"/>
             </Grid>
-            
         </Border>
-        
     </Border>
 
 </Window>

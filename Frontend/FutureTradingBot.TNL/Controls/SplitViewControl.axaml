@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:FutureTradingBot.TNL.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="FutureTradingBot.TNL.Controls.SplitViewControl"
+             x:DataType="vm:MainViewModel">
+    
+    <SplitView IsPaneOpen="True"
+               DisplayMode="Inline"
+               OpenPaneLength="250"
+               PaneBackground="{StaticResource BackgroundBrush}">
+        <SplitView.Pane>
+            <StackPanel>
+                <StackPanel VerticalAlignment="Center"
+                            HorizontalAlignment="Center">
+                    <Image Source="/Assets/avalonia-logo.ico"
+                           Width="100"
+                           Height="100"/>
+                    <TextBlock Text="{Binding AppTitle}"/>
+                </StackPanel>
+                <StackPanel>
+                    <ListBox>Dashboard</ListBox>
+                    <ListBox>Markets</ListBox>
+                    <ListBox>Signals</ListBox>
+                    <ListBox>Positions</ListBox>
+                    <ListBox>History</ListBox>
+                    <ListBox>Settings</ListBox>
+                </StackPanel>
+            </StackPanel>
+        </SplitView.Pane>
+    </SplitView>
+    
+</UserControl>
